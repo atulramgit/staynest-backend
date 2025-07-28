@@ -1,0 +1,87 @@
+# === Python & Django ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.log
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+.env
+.env.*
+
+# Django specific
+*.sqlite3
+*.db
+db.sqlite3
+staticfiles/
+static/
+media/
+
+# Django migrations (optional, remove if you want to track them)
+**/migrations/*.py
+!**/migrations/__init__.py
+**/migrations/*.pyc
+
+# Local settings, secrets, envs
+settings_local.py
+
+# === IDEs & Editor Configs ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*~
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === Tests & Coverage ===
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.tox/
+.nox/
+.pytest_cache/
+
+# === Docker ===
+*.pid
+*.log
+docker-compose.override.yml
+__docker_cache__/
+*.sock
+
+# Ignore Docker volumes (if mounted)
+volumes/
+
+# === PostgreSQL ===
+*.sql
+*.dump
+postgres_data/  # If you mount data in a volume
+
+# === Redis / Channels / Celery ===
+*.sock
+celerybeat-schedule
+celerybeat.pid
+
+# === MyPy / Pylint / Linters ===
+.mypy_cache/
+.pytype/
+.pylint.d/
+pylint-report.txt
+.dmypy.json
+
+# === Node/npm (if frontend exists or WebSocket dashboard) ===
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
